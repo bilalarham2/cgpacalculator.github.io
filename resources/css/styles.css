@@ -1,0 +1,360 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'verdana', 'Arial', sans-serif;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+
+.container {
+    max-width: 460px;
+    margin: auto;
+    padding: 15px;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: crimson;
+    padding-block: 15px;
+    border-radius: 6px;
+}
+.navbar a {
+    
+    text-decoration: none;
+    color: #fff;
+}
+.logo {
+    margin-right: 50px;
+}
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+#toggler,
+.navbar label {
+    display: none;
+}
+
+
+header {
+    background-image: linear-gradient(rgba(85, 84, 84, 0.45), rgba(85, 84, 84, 0.45)), url(img/banner.jpeg);
+    background-position: top;
+    background-size: cover;
+    padding: 30px 0;
+    background-attachment: fixed;
+}
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.head {
+    text-align: center;
+}
+
+h1 {
+    font-size: 240%;
+    color: crimson;
+    text-transform: uppercase;
+}
+
+.help {
+    padding: 40px 0;
+}
+
+.head p {
+    font-size: 180%;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.sub-name,
+.sub-mar,
+.sub-credit {
+    border: 1px solid #363635;
+    background-color: #fff;
+    padding: 12px 15px;
+    border-radius: 5px;
+    transition: border 0.3s;
+    color: inherit;
+    font-family: inherit;
+    margin: 10px 0;
+}
+
+.sub-name:focus,
+.sub-mar:focus,
+.sub-credit:focus {
+    border: 1px solid #ff9800;
+}
+
+.sub-mar,
+.sub-credit {
+    width: 75px;
+}
+
+.sub-name {
+    width: 220px;
+}
+
+.sub-add {
+    padding: 12px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid crimson;
+    background-color: crimson;
+    border-radius: 5px;
+    transition: background-color .4s, color .4s;
+    width: fit-content;
+}
+
+.sub-add:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+
+
+.details {
+    /* background-color: rgb(224, 224, 224); */
+    text-align: center;
+    padding: 30px;
+    min-height: 160px;
+}
+
+h2 {
+    font-size: 180%;
+    color: crimson;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subject-head {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subject {
+    border-bottom: 1px solid #e7e7e7;
+    padding: 20px
+}
+
+.subject:first-child {
+    border-top: 1px solid #e7e7e7;
+}
+
+.subject:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.right {
+    float: right;
+}
+
+.sub-name-des {
+    float: left;
+    text-transform: uppercase;
+}
+
+.cred {
+    margin-right: 40px;
+    color: #ff9800;
+}
+
+.calculate {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #f8f6f6;
+    min-height: 200px;
+}
+
+.calculate-btn:active,
+.calculate-btn:visited,
+.calculate-btn,
+.reset-btn {
+    padding: 15px 20px;
+    font-size: 150%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    transition: background-color .4s, color .4s;
+}
+
+.calculate-btn {
+    border: 2px solid #ff9800;
+    background-color: #ff9800;
+}
+
+.reset-btn {
+    border: 2px solid #ff1100;
+    background-color: #ff1100;
+}
+
+.calculate-btn:hover {
+    background-color: #fff;
+    color: #ff9800;
+}
+
+.reset-btn:hover {
+    background-color: #fff;
+    color: #ff1100;
+}
+
+.total-gpa {
+    font-size: 200%;
+    font-weight: 700;
+    color: #ff9800;
+    background-color: #000;
+    width: 120px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+/*-----------------------------/
+----- Info page -----
+------------------------------*/
+
+.info {
+    padding: 30px 0;
+}
+
+.formula-before {
+    padding: 20px;
+    color: #666;
+}
+
+.formula {
+    font-weight: 800;
+    padding: 15px 0;
+}
+
+.note-message {
+    color: #ff1100;
+    font-weight: 800;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width:468px) {
+    .sub-add {
+        width: 380px;
+        margin: 5px 10px;
+    }
+}
+
+@media only screen and (max-width:394px) {
+    .sub-add,
+    .sub-name {
+        width: 320px;
+        margin: 5px 10px;
+    }
+    .sub-mar,
+    .sub-credit {
+        width: 146px;
+        margin: 5px 10px;
+    }
+}
+
+@media only screen and (max-width:349px) {
+    .sub-mar,
+    .sub-credit,
+    .sub-name,
+    .sub-add {
+        width: 260px;
+        margin: 5px 10px;
+    }
+}
+
+.row-info{
+    text-align: center;
+    padding: 20px 0;
+}
+.share-line {
+    font-size: 180%;
+    color: crimson;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+.icons-div a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 200%;
+}
+
+.mail-ico,
+.fb-ico,
+.wtsap-ico {
+    transition: color .4s;
+}
+
+.fb-ico {
+    color: #3b5998;
+}
+
+.insta-ico {
+    color: #8a3ab9;
+}
+
+.mail-ico {
+    color: #e04006;
+}
+
+.mail-ico:hover,
+.fb-ico:hover,
+.wtsap-ico:hover,
+.question a:hover {
+    color: rgb(194, 53, 53);
+}
+
+.info {
+    position: relative;
+}
+.image{
+    height: 500px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+}
